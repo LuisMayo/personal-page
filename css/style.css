@@ -7442,10 +7442,11 @@ h1, h2, h3, h4, h5,
         #colorlib-aside .colorlib-footer ul li a {
           color: rgba(0, 0, 0, 0.7);
           padding: 4px; }
-          #colorlib-aside .colorlib-footer ul li a:hover, #colorlib-aside .colorlib-footer ul li a:active, #colorlib-aside .colorlib-footer ul li a:focus {
-            text-decoration: none;
-            outline: none;
-            color: #f05d23; }
+ul.social-hover li a:hover {
+  text-decoration: none;
+  outline: none;
+  color: #f05d23 !important;
+}
 
 #colorlib-main {
   width: 100%;
@@ -8105,9 +8106,21 @@ textarea.form-control {
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        color: #000000; }
-      .ftco-social li a:hover {
-        color: #fff; }
+         }
+
+.ftco-social li a:not(:hover) span {
+  color: #000000;
+}
+
+.ftco-social li a:hover {
+  color: #fff; 
+}
+  
+
+.ftco-mini-social {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 #map {
   height: 400px;
