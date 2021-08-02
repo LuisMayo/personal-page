@@ -1,3 +1,8 @@
+/* Custom rules */
+#ynh-overlay-switch {
+ display: none !important;
+}
+
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
